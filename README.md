@@ -7,3 +7,4 @@
   * commit 5 (queued up)
   * commit 6
   * commit 7 (queued up, 2nd try)
+  * commit 8 (try again)
