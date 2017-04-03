@@ -8,3 +8,7 @@
   * commit 6
   * commit 7 (queued up, 2nd try)
   * commit 8 (try again)
+  
+* New `tip` start testing
+  * commit.1
+  
