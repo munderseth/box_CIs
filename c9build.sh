@@ -13,4 +13,4 @@ testspace config url http://$MARK_TOKEN@mark.stridespace.com/munderseth:box_CIs/
 printenv > printenv.txt
 
 # Push
-testspace test.xml "+printenv.txt{environment variables}"
+testspace test.xml "+printenv.txt{environment variables}" --repo git
