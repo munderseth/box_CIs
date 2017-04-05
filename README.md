@@ -15,3 +15,6 @@
   * 
  * New `tip` - Tuesday 4/4
   * tuesday.1
+  * 
+ * New `server` and new `client`
+  * wed.1
