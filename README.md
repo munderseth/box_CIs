@@ -12,3 +12,6 @@
 * New `tip` start testing
   * commit.1
   * commit.2
+  * 
+ * New `tip` - Tuesday 4/4
+  * tuesday.1
