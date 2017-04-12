@@ -1,16 +1,13 @@
 #!/bin/bash
 
-# Download Client
-curl -s https://testspace-client.s3.amazonaws.com/testspace-linux-dev.tgz | sudo tar -zxvf- -C /usr/local/bin
-# using "mark-s2-tec"
-export MARK_TOKEN=095d8acfaaf71b4a0f3767e41152620ebdda1b31
-BRANCH_NAME=`git symbolic-ref --short HEAD` 
-testspace config url http://$MARK_TOKEN@mark.stridespace.com/munderseth:box_CIs/$BRANCH_NAME
-
-# Build
+# Client install and configure (using "mark-s2-tec")
+curl -s https://testspace-client.s3.amazonaws.com/testspace-linux-dev.tgz | tar -zxvf- -C $HOME/bin
+CI=true testspace config url http://095d8acfaaf71b4a0f3767e41152620ebdda1b31:@mark.stridespace.com
+testspace -v
 
 # Test
+BRANCH_NAME=`git symbolic-ref --short HEAD` 
 printenv > printenv.txt
 
 # Push
-testspace test.xml "+printenv.txt{environment variables}" --repo git
+testspace test.xml printenv.txt --repo git

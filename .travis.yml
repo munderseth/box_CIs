@@ -9,4 +9,4 @@ script:
   - printenv > printenv.txt
  
 after_script:
-  - testspace test.xml "+printenv.txt{environment variables}"
+  - testspace test.xml printenv.txt 
