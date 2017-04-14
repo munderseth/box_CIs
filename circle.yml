@@ -11,8 +11,7 @@ dependencies:
 test:
   override:
     - printenv > printenv.txt
-    - parallel: true
-        files:
-          - testspace [one]test.xml 
-          - testspace [two]test.xml
+  
+  post:
+    - testspace test.xml printenv.txt
     
