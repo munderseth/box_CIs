@@ -1,20 +1,8 @@
-# box_CIs
+The Repo is used for simple CI examples based on [this help](https://help.testspace.com/how-to:add-to-ci) article:
 
-* New `test-pr` branch
-  * commit 2
-  * commit 3
-  * commit 4
-  * commit 5 (queued up)
-  * commit 6
-  * commit 7 (queued up, 2nd try)
-  * commit 8 (try again)
-  
-* New `tip` start testing
-  * commit.1
-  * commit.2
-  * 
- * New `tip` - Tuesday 4/4
-  * tuesday.1
-  * 
- * New `server` and new `client`
-  * wed.1
+ * Traivis CI
+ * Circle CI
+ * Shippable
+ * Appveyor
+ 
+All CIs push to the same Space / Results set. 
